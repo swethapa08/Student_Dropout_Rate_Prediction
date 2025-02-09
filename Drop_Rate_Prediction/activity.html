@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Day to Day Activities</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<!-- External CSS -->
+	<!--<link rel="stylesheet" href="style.css">-->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        *
+{
+	margin: 0;
+	padding: 0;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	box-sizing: border-box;
+}
+
+body
+{
+  font-weight: 800;
+  font-style: normal;
+}
+
+h1
+{
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: rgb(35, 35, 85);
+}
+
+span
+{
+	font-size: .9rem;
+}
+
+h6
+{
+	font-size: 1.1rem;
+	color: rgb(24, 24, 49);
+}
+
+
+/*------------- Navigation style start ------------*/
+nav
+{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1vw 7vw;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+
+}
+
+nav .logo
+{
+	width: 150px;
+	cursor: pointer;
+}
+
+nav .navigation
+{
+	display: flex;
+}
+
+#menu-btn
+{
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+
+#menu-close
+{
+	display: none;
+}
+
+nav .navigation ul
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav .navigation ul li
+{
+	list-style: none;
+	margin-left: 40px;
+	margin-right:0;
+}
+
+nav .navigation ul li a
+{
+	text-decoration: none;
+	color: rgb(21, 21, 100);
+	font-size: 16px;
+	font-weight: 700;
+	transition: 0.3s ease;
+}
+
+.content {
+  max-width: 775px;
+  height: 700px;
+  margin: auto;
+  background: rgb(174,238,215);
+background: linear-gradient(90deg, rgba(174,238,215,0.75) 0%, rgba(174,238,215,0.75) 100%);
+    border-radius: 47px;
+  padding: 57px;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover
+{
+	color: #FDC93B;
+
+}
+    </style>
+</head>
+<body>
+<nav style="margin-top:0;">
+
+		<img src="img/p3.png" class="logo" alt="" style="height:67px;width:95px; border-radius:50px">
+
+
+		<div class="navigation">
+			<ul>
+                <i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="activity.html" id="act">Details</a></li>
+				<li><a href="join.html" id="js">Results</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+<br><br><br><br><br>
+<div class="content" style="">
+    <form id = "PredictForm" action="result/" method="GET" class="col1" style="border-radius: 27px; margin-top:27px; width:100%; height:100px;">
+        <div class="r1">
+            <label><b>LANGUAGE: </b></label>
+            <!--<input type="text" name="Nationality">-->
+            <select name="Nationality" required>
+<option selected value="6">6-English</option>
+<option value="1">1-Tamil</option>
+<option value="2">2-Hindi</option>
+<option value="3">3-Telugu</option>
+<option value="4">4-Kannadam</option>
+<option value="5">5-French</option>
+<option value="7">7-Malayalam</option>
+</select>
+        </div>
+<br><br>
+        <div class="r1">
+            <label><b>AGE:  </b></label>
+            <input type="text" name="Age_at_enrollment">
+        </div><br><br>
+<div class="r1">
+<label><b>PREVIOUS QUALIFICATION: </b></label>
+<!--<input type="text" name="Previous_qualification">-->
+    <select name="Previous_qualification" id="numberSelect" required>
+            <option selected value="1">Secondary education</option>
+                <option value="6">12th year of schooling</option>
+                <option value="9">11th year of schooling</option>
+                <option value="10">10th year of schooling</option>
+            <option value="12">9th year of schooling</option>
+            <option value="13">Basic education 2nd cycle (6th/7th/8th year) or equivalent</option>
+            <option value="15">Higher education—degree (1st cycle)</option>
+            <option value="2">Higher education—bachelor’s degree</option>
+        <option value="7">12th year of schooling—not completed</option>
+
+            <option value="8">11th year of schooling—not completed</option>
+
+	    <option value="11">10th year of schooling—not completed</option>
+        </select>
+</div>
+<br><br>
+<div class="r1">
+<label><b>FATHER's QUALIFICATION: </b></label>
+<!--<input type="text" name="Father_qualification">-->
+    <select name="Father_qualification">
+        <option selected value="10">11th Year of Schooling</option>
+        <option value="28">Basic Education 2nd Cycle (6th/7th/8th Year) or equivalent</option>
+        <option value="3">Higher Education Degree</option>
+            <option value="1">Secondary Education—12th Year of Schooling or Equivalent</option>
+            <option value="2">Higher Education—bachelor’s degree</option>
+            <option value="4">Higher Education—master’s degree</option>
+            <option value="7">12th Year of Schooling—not completed</option>
+            <option value="8">11th Year of Schooling—not completed</option>
+
+            <option value="12">10th Year of Schooling</option>
+            <option value="14">Basic Education 3rd Cycle (9th/10th/11th Year) or Equivalent</option>
+            <option value="15">Complementary High School Course</option>
+            <option value="16">Technical-professional course</option>
+	    <option value="11">10th year of schooling—not completed</option>
+        </select>
+</div>
+<br><br>
+<div class="r1">
+<label><b>FATHER's OCCUPATION: </b></label>
+<!--<input type="text" name="Father_occupation"/>-->
+    <select name="Father_occupation">
+    <option selected value="10">Administrative staff</option>
+        <option value="9">Installation and Machine Operators and Assembly Workersf</option>
+        <option value="4">Intermediate Level Technicians and Professions</option>
+        <option value="21">Teachers</option>
+        <option value="20">Health professionals</option>
+        <option value="3">Specialists in Intellectual and Scientific Activities</option>
+        <option value="15">Armed Forces Sergeants</option>
+        <option value="6">Personal Services, Security and Safety Workers, and Sellers</option>
+    </select>
+</div>
+<br><br>
+<div class="r1">
+<label><b>Mother's QUALIFICATION: </b></label>
+<!--<input type="text" name="Father_qualification">-->
+   <select name="Mother_qualification">
+        <option selected value="13">General commerce course</option>
+        <option value="1">Secondary Education—12th Year of Schooling or Equivalent</option>
+        <option value="28">Basic Education 2nd Cycle (6th/7th/8th Year) or equivalent</option>
+        <option value="3">Higher Education Degree</option>
+            <option value="2">Higher Education—bachelor’s degree</option>
+            <option value="4">Higher Education—master’s degree</option>
+            <option value="7">12th Year of Schooling—not completed</option>
+            <option value="8">11th Year of Schooling—not completed</option>
+            <option value="12">10th Year of Schooling</option>
+            <option value="14">Basic Education 3rd Cycle (9th/10th/11th Year) or Equivalent</option>
+            <option value="15">Complementary High School Course</option>
+            <option value="16">Technical-professional course</option>
+	    <option value="11">10th year of schooling—not completed</option>
+        </select>
+</div>
+<br><br>
+<div class="r1">
+<label><b>Mother's OCCUPATION: </b></label>-->
+<!--<input type="text" name="Father_occupation"/>-->
+   <select name="Mother_occupation">
+        <option selected value="6">Personal Services, Security and Safety Workers, and Sellers</option>
+        <option value="4">Intermediate Level Technicians and Professions</option>
+    <option value="10">Administrative staff</option>
+        <option value="9">Installation and Machine Operators and Assembly Workers</option>
+        
+        <option value="21">Teachers</option>
+        <option value="20">Health professionals</option>
+        <option value="3">Specialists in Intellectual and Scientific Activities</option>
+        <option value="15">Armed Forces Sergeants</option>
+        
+    </select>
+</div>
+<br><br>
+<div class="r1">
+<label><b>GENDER: </b></label>
+    <input name="Gender" type="text">
+
+</div>
+<br><br><br><br>
+        <div style="text-align: center;">
+    <input id ="PredictButton" type="submit" style="padding:21px; background:#FF6347; color:#fff; border:none; border-radius:17px; font-size:17px; font-weight:700; text-align: center" value="SUBMIT"><!-- <i class="fa-solid fa-arrows-rotate" style="color: #ffffff;"></i>-->
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" style="padding:21px; background:#00CED1; color:#fff; border:none; border-radius:17px; font-size:17px; font-weight:700; text-align: center" value="CLEAR">
+        </div><br><br>
+</form>
+<br><br>
+    <script>
+    </script>
+</div>
+</body>
+</html>

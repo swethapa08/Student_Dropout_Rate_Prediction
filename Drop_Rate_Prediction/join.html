@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JOIN US</title>
+	<style>
+	table, th, td {
+	  border: 3px solid transparent;
+            
+            /* Gradient border */
+            border-image: linear-gradient(to right, #8B008B, #00008B);
+            border-image-slice: 1;
+	  margin:50px;
+	  text-align:center;
+	font-size:23px;
+	background-color:#FAF0E6;
+}
+button{
+	font-weight:700;
+}
+</style>
+    <style>
+        *
+{
+	margin: 0;
+	padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	box-sizing: border-box;
+}
+
+body
+{
+  font-weight: 800;
+  font-style: normal;
+}
+
+h1
+{
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: rgb(35, 35, 85);
+}
+
+span
+{
+	font-size: .9rem;
+}
+
+h6
+{
+	font-size: 1.1rem;
+	color: rgb(24, 24, 49);
+}
+
+
+/*------------- Navigation style start ------------*/
+nav
+{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1vw 7vw;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+
+}
+
+nav .logo
+{
+	width: 150px;
+	cursor: pointer;
+}
+
+nav .navigation
+{
+	display: flex;
+}
+
+#menu-btn
+{
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+
+#menu-close
+{
+	display: none;
+}
+
+nav .navigation ul
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav .navigation ul li
+{
+	list-style: none;
+	margin-left: 40px;
+	margin-right:0;
+}
+
+nav .navigation ul li a
+{
+	text-decoration: none;
+	color: rgb(21, 21, 100);
+	font-size: 16px;
+	font-weight: 700;
+	transition: 0.3s ease;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover
+{
+	color: #FDC93B;
+
+}
+#home
+{
+	background-image: linear-gradient(rgba(9, 5, 54,0.67), rgb(5,4,46,0.67)), url("img/img2.png");
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 40px;
+}
+
+#home h2
+{
+	color: #fff;
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+}
+
+#home p
+{
+	width: 50%;
+	color: #fff;
+	font-size: 0.9rem;
+	line-height: 25px;
+}
+
+#home .btn
+{
+	margin-top: 30px;
+}
+
+#home a
+{
+	text-decoration: none;
+	font-size: 0.9rem;
+	padding: 13px 35px;
+	background-color: #fff;
+	font-weight: 600;
+	border-radius: 5px;
+}
+
+#home a.blue
+{
+	color: #fff;
+	background: #5fb9bf;
+	transition: 0.3s ease;
+}
+
+#home a.blue:hover
+{
+	color: #5fb9bf;
+	background: #fff;
+}
+
+#home a.yellow
+{
+	color: #fff;
+	background: #fdc938;
+	transition: 0.3s ease;
+}
+
+#home a.yellow:hover
+{
+	color: rgb(21, 21, 100);
+	background: #fff;
+}
+/*------------- Hero section styling end --------------*/
+
+
+/*------------- Features section styling start -------------*/
+#features
+{
+	padding: 5vw 8vw 0 8vw;
+	text-align: center;
+}
+
+#features .fea-base
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	margin-top: 50px;
+}
+
+#features .fea-box
+{
+	background: #edf1f2;
+	text-align: start;
+	padding: 1.2rem;
+	border-radius: 6px;
+}
+
+#features .fea-box i
+{
+	font-size: 2.3rem;
+	color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3
+{
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: rgb(46, 46, 59);
+	padding: 13px 0 7px 0;
+}
+
+#features .fea-box p
+{
+	font-size: 1rem;
+	font-weight: 400;
+	color: rgb(70, 70, 87);
+}
+/*------------- Features section styling end -------------*/
+
+#cb{
+position:fixed;
+bottom:77px;
+right:7%;
+}
+
+#cb{
+text-align:center;
+font-weight:700;
+font-family: 'Poppins', sans-serif;
+font-size:27px;
+color: rgb(35, 35, 85);
+}
+
+#cb{
+background: linear-gradient(white, white) padding-box, linear-gradient(to right, #40E0D0, darkorchid) border-box;
+border-radius: 27px;
+border: 7px solid transparent;
+}
+
+#rob{
+width:37px;
+height:37px;
+}
+    </style>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<style>
+	margin: 0;
+	padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	box-sizing: border-box;
+}
+
+body
+{
+  font-weight: 800;
+  font-style: normal;
+}
+
+h1
+{
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: rgb(35, 35, 85);
+}
+
+span
+{
+	font-size: .9rem;
+}
+
+h6
+{
+	font-size: 1.1rem;
+	color: rgb(24, 24, 49);
+}
+
+
+/*------------- Navigation style start ------------*/
+nav
+{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1vw 7vw;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+	z-index: 1;
+
+}
+
+nav .logo
+{
+	width: 150px;
+	cursor: pointer;
+}
+
+nav .navigation
+{
+	display: flex;
+}
+
+#menu-btn
+{
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+
+#menu-close
+{
+	display: none;
+}
+
+nav .navigation ul
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav .navigation ul li
+{
+	list-style: none;
+	margin-left: 40px;
+	margin-right:0;
+}
+
+nav .navigation ul li a
+{
+	text-decoration: none;
+	color: rgb(21, 21, 100);
+	font-size: 16px;
+	font-weight: 700;
+	transition: 0.3s ease;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover
+{
+	color: #FDC93B;
+
+}
+</style>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/p3.png" class="logo" alt="" style="height:67px;width:95px; border-radius:50px">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="activity.html" id="act">Details</a></li>
+				<li><a href="join.html" id="js">Results</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav><br><br><br>
+<table style="width:1250px; height:1270px">
+  <tr>
+    <th>RANKING</th>
+    <th>NAME</th> 
+    <th>UPCOMING APPOINTMENT</th>
+    <th>PREVIOUS RESULT</th>
+  </tr>
+  <tr>
+    <td>75&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-ranking-star fa-xl" style="color: #FFD43B;"></i></td>
+    <td>Smith</td>
+    <td><button onclick=func5() style="padding:17px; background:#32CD32; color:#fff; border-radius:17px; border:none;">ELIGIBLE</button>&nbsp;&nbsp;&nbsp;<button onclick=func6() style="padding:17px; background:#87CEFA; color:#fff; border-radius:17px; border:none;">BOOK NOW</button></td>
+    <td><a href="res.html" style="padding:17px; background:#FF6347; color:#fff; border:none; border-radius:17px; text-decoration:none; font-size:15px;">VIEW NOW</a>
+  </tr>
+  <tr>
+    <td>77&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-ranking-star fa-xl" style="color: #FFD43B;"></i></td>
+    <td>Jackson</td>
+    <td><button onclick=func5() style="padding:17px; background:#32CD32; color:#fff; border-radius:17px; border:none;">ELIGIBLE</button>&nbsp;&nbsp;&nbsp;<button onclick=func6() style="padding:17px; background:#87CEFA; color:#fff; border-radius:17px; border:none;">BOOK NOW</button></td>
+    <td><a href="res.html" style="padding:17px; background:#FF6347; color:#fff; border:none; border-radius:17px; text-decoration:none; font-size:15px;">VIEW NOW</a>
+  </tr>
+  <tr>
+    <td>79&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-ranking-star fa-xl" style="color: #FFD43B;"></i></td>
+    <td>Doe</td>
+    <td><button onclick=func5() style="padding:17px; background:#32CD32; color:#fff; border-radius:17px; border:none;">ELIGIBLE</button>&nbsp;&nbsp;&nbsp;<button onclick=func6() style="padding:17px; background:#87CEFA; color:#fff; border-radius:17px; border:none;">BOOK NOW</button></td>
+    <td><a href="res.html" style="padding:17px; background:#FF6347; color:#fff; border:none; border-radius:17px; text-decoration:none; font-size:15px;">VIEW NOW</a>
+  </tr>
+<tr>
+    <td>87&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-ranking-star fa-xl" style="color: #FFD43B;"></i></td>
+    <td>Alex</td>
+    <td><button onclick=func5() style="padding:17px; background:#32CD32; color:#fff; border-radius:17px; border:none;">ELIGIBLE</button>&nbsp;&nbsp;&nbsp;<button onclick=func6() style="padding:17px; background:#87CEFA; color:#fff; border-radius:17px; border:none;">BOOK NOW</button></td>
+    <td><a href="res.html" style="padding:17px; background:#FF6347; color:#fff; border:none; border-radius:17px; text-decoration:none; font-size:15px;">VIEW NOW</a>
+  </tr>
+<tr>
+    <td>97&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-ranking-star fa-xl" style="color: #FFD43B;"></i></td>
+    <td>Priya</td>
+    <td><button style="padding:17px; background:#32CD32; color:#fff; border-radius:17px; border:none;">ELIGIBLE</button>&nbsp;&nbsp;&nbsp;<button onclick=func6() style="padding:17px; background:#87CEFA; color:#fff; border-radius:17px; border:none;">BOOK NOW</button></td>
+    <td><a href="res.html" style="padding:17px; background:#FF6347; color:#fff; border:none; border-radius:17px; text-decoration:none; font-size:15px;">VIEW NOW</a>
+  </tr>
+<tr>
+    <td>171&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-ranking-star fa-xl" style="color: #FFD43B;"></i></td>
+    <td>Kelvin</td>
+    <td><button onclick=func5() style="padding:17px; background:#32CD32; color:#fff; border-radius:17px; border:none;">ELIGIBLE</button>&nbsp;&nbsp;&nbsp;<button onclick=func6() style="padding:17px; background:#87CEFA; color:#fff; border-radius:17px; border:none;">BOOK NOW</button></td>
+    <td><a href="res.html" style="padding:17px; background:#FF6347; color:#fff; border:none; border-radius:17px; text-decoration:none; font-size:15px;">VIEW NOW</a>
+  </tr>
+<tr>
+    <td>187&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-ranking-star fa-xl" style="color: #FFD43B;"></i></td>
+    <td>Dary</td>
+    <td><button onclick=func5() style="padding:17px; background:#32CD32; color:#fff; border-radius:17px; border:none;">ELIGIBLE</button>&nbsp;&nbsp;&nbsp;<button onclick=func6() style="padding:17px; background:#87CEFA; color:#fff; border-radius:17px; border:none;">BOOK NOW</button></td>
+    <td><a href="res.html" style="padding:17px; background:#FF6347; color:#fff; border:none; border-radius:17px; text-decoration:none; font-size:15px;">VIEW NOW</a>
+  </tr>
+</table>
+
+</body>
+</html>
